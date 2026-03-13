@@ -1,16 +1,22 @@
+#![image]()
+
 # NineSliceImageComponent
+
 <!-- Header Start -->
+<img align="right" alt="Stars Badge" src="https://img.shields.io/github/stars/jdsherbert/Juce-9-Slice-Image-Component?label=%E2%AD%90"/>
+<img align="right" alt="Forks Badge" src="https://img.shields.io/github/forks/jdsherbert/Juce-9-Slice-Image-Component?label=%F0%9F%8D%B4"/>
+<img align="right" alt="Watchers Badge" src="https://img.shields.io/github/watchers/jdsherbert/Juce-9-Slice-Image-Component?label=%F0%9F%91%81%EF%B8%8F"/>
+<img align="right" alt="Issues Badge" src="https://img.shields.io/github/issues/jdsherbert/Juce-9-Slice-Image-Component?label=%E2%9A%A0%EF%B8%8F"/>
+<img align="right" src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FJDSherbert%2FJuce-9-Slice-Image-Component%2Fhit-counter%2FREADME&count_bg=%2379C83D&title_bg=%23555555&labelColor=0E1128&title=🔍&style=for-the-badge">
 <a href="https://juce.com/">
   <img height="40" width="40" src="https://cdn.simpleicons.org/juce">
 </a>
 <a href="https://learn.microsoft.com/en-us/cpp/cpp-language">
   <img height="40" width="40" src="https://cdn.simpleicons.org/cplusplus">
 </a>
-<img align="right" alt="Stars Badge" src="https://img.shields.io/github/stars/jdsherbert/Juce-9-Slice-Image-Component?label=%E2%AD%90"/>
-<img align="right" alt="Forks Badge" src="https://img.shields.io/github/forks/jdsherbert/Juce-9-Slice-Image-Component?label=%F0%9F%8D%B4"/>
-<img align="right" alt="Watchers Badge" src="https://img.shields.io/github/watchers/jdsherbert/Juce-9-Slice-Image-Component?label=%F0%9F%91%81%EF%B8%8F"/>
-<img align="right" alt="Issues Badge" src="https://img.shields.io/github/issues/jdsherbert/Juce-9-Slice-Image-Component?label=%E2%9A%A0%EF%B8%8F"/>
-<img align="right" src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FJDSherbert%2FJuce-9-Slice-Image-Component%2Fhit-counter%2FREADME&count_bg=%2379C83D&title_bg=%23555555&labelColor=0E1128&title=🔍&style=for-the-badge">
+<a href="https://cmake.org/">
+  <img height="40" width="40" src="https://cdn.simpleicons.org/cmake">
+</a>
 <!-- Header End -->
 
 -----------------------------------------------------------------------
