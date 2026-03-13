@@ -53,17 +53,38 @@ Worth noting you can change this to "low" for pixel or low res assets to sharpen
 
 -----------------------------------------------------------------------
 
-## Setup
+## Integration
+### CMake (Recommended)
+Add the following to your `CMakeLists.txt`. 
+CMake will fetch the component directly from GitHub at configure time — no manual copying required.
 
-1. Copy `NineSliceImageComponent.h` and `NineSliceImageComponent.cpp` into your JUCE project.
-2. Add both files to your project in the Projucer or CMakeLists.
-3. Include the header where needed:
+```cmake
+cmakeinclude(FetchContent)
 
+FetchContent_Declare(
+    NineSliceImageComponent
+    GIT_REPOSITORY https://github.com/JDSherbert/Juce-9-Slice-Image-Component.git
+    GIT_TAG        main
+    GIT_SHALLOW    TRUE
+)
+
+FetchContent_MakeAvailable(NineSliceImageComponent)
+
+target_link_libraries(YourTarget
+    PRIVATE
+        NineSliceImageComponent
+)
+```
+Then include the header in your source:
 ```cpp
 #include <NineSliceImageComponent.h>
 ```
 
-No additional dependencies beyond `JuceHeader.h` are required.
+Tip: Pin to a specific commit hash rather than main for reproducible builds:
+`cmakeGIT_TAG <commit-hash>`
+
+## Manual
+If you're not using CMake, copy `NineSliceImageComponent.h` and `NineSliceImageComponent.cpp` directly into your project and add them to your build system. No dependencies beyond `JuceHeader.h` are required.
 
 -----------------------------------------------------------------------
 
