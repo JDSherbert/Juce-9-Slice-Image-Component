@@ -1,6 +1,6 @@
-<!--![image]()-->
+<img width="975" height="865" alt="image" src="https://github.com/user-attachments/assets/77928d4d-99fc-403d-a71e-ba13eae0aed5" />
 
-# NineSliceImageComponent
+# Nine-Slice Image Component
 
 <!-- Header Start -->
 <img align="right" alt="Stars Badge" src="https://img.shields.io/github/stars/jdsherbert/Juce-9-Slice-Image-Component?label=%E2%AD%90"/>
