@@ -75,15 +75,19 @@ target_link_libraries(YourTarget
         NineSliceImageComponent
 )
 ```
+
 Then include the header in your source:
+
 ```cpp
 #include <NineSliceImageComponent.h>
 ```
 
 Tip: Pin to a specific commit hash rather than main for reproducible builds:
-`cmakeGIT_TAG <commit-hash>`
+```cmake
+GIT_TAG <commit-hash>
+```
 
-## Manual
+### Manual
 If you're not using CMake, copy `NineSliceImageComponent.h` and `NineSliceImageComponent.cpp` directly into your project and add them to your build system. No dependencies beyond `JuceHeader.h` are required.
 
 -----------------------------------------------------------------------
