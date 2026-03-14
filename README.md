@@ -35,7 +35,7 @@
 
 ## Overview
 
-A JUCE `Component` that renders an image using **nine-slice scaling** (also known as scale-9 or border-image slicing). Nine-slice scaling divides an image into a 3×3 grid of regions — four corners, four edges, and a center — and scales each region independently. Corners are drawn at their original size, edges are stretched along one axis only, and the center fills the remaining space. This preserves crisp, undistorted corners regardless of how the component is resized, making it ideal for UI chrome such as panels, buttons, tooltips, and windows.
+A JUCE `Component` that renders an image using **nine-slice scaling** (also known as scale-9 or border-image slicing). Nine-slice scaling divides an image into a 3×3 grid of regions (four corners, four edges, and a center) and scales each region independently. Corners are drawn at their original size, edges are stretched along one axis only, and the center fills the remaining space. This preserves crisp, undistorted corners regardless of how the component is resized, making it ideal for UI chrome such as panels, buttons, tooltips, and windows.
 
 -----------------------------------------------------------------------
 
@@ -43,7 +43,7 @@ A JUCE `Component` that renders an image using **nine-slice scaling** (also know
 
 - Pixel-accurate nine-slice rendering via JUCE's `Graphics::drawImage`
 - Configurable per-side margins (`left`, `top`, `right`, `bottom`) via the `Margin` struct
-- Zero-size slice guard — empty source or destination rects are safely skipped
+- Zero-size slice guard - empty source or destination rects are safely skipped
 - Configurable resampling quality (defaults to `highResamplingQuality` for modern UI assets). 
 Worth noting you can change this to "low" for pixel or low res assets to sharpen them up.
 - Optional debug overlay that draws slice boundary lines and a component outline at runtime
@@ -62,7 +62,7 @@ Worth noting you can change this to "low" for pixel or low res assets to sharpen
 ## Integration
 ### CMake (Recommended)
 Add the following to your `CMakeLists.txt`. 
-CMake will fetch the component directly from GitHub at configure time — no manual copying required.
+CMake will fetch the component directly from GitHub at configure time; no manual copying required!
 
 ```cmake
 cmakeinclude(FetchContent)
@@ -118,7 +118,7 @@ addAndMakeVisible(nineSlice);
 
 ### Resizing
 
-`SliceLayout` is rebuilt automatically on each paint call, so simply call `setBounds()` as normal — no manual layout invalidation required:
+`SliceLayout` is rebuilt automatically on each paint call, so simply call `setBounds()` as normal; no manual layout invalidation required:
 
 ```cpp
 nineSlice.setBounds(getLocalBounds().reduced(20));
@@ -158,7 +158,7 @@ struct Margin
 };
 ```
 
-Defines the fixed pixel thickness of each edge region. The corner size is the intersection of the adjacent edge thicknesses — for example, the top-left corner is `left` × `top` pixels.
+Defines the fixed pixel thickness of each edge region. The corner size is the intersection of the adjacent edge thicknesses. For example, the top-left corner is `left` × `top` pixels.
 
 ---
 
